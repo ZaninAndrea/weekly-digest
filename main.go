@@ -13,6 +13,10 @@ import (
 )
 
 func main() {
+	if time.Now().Weekday() != time.Saturday {
+		return
+	}
+
 	godotenv.Load()
 
 	// Connect to MongoDB
