@@ -40,8 +40,7 @@ const rawEmailTemplate string = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Tr
         <!--<![endif]-->
 
         <style type="text/css">
-          @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Merriweather:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Merriweather:wght@400;700&family=Space+Mono&display=swap');
           body {
             margin: 0;
             padding: 0;
@@ -64,7 +63,8 @@ const rawEmailTemplate string = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Tr
           }
 
           .postTitle{
-            font-family: "Merriweather", "Bookerly",Georgia,serif; font-size: 16px;
+            font-family: "Merriweather", "Bookerly", Georgia, serif;
+            font-size: 16px;
           }
 
           .postSource{
@@ -72,7 +72,8 @@ const rawEmailTemplate string = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Tr
           }
 
           .postDescription{
-            font-family: "Merriweather", "Bookerly",Georgia,serif; font-size: 16px; margin-bottom: 48px;
+            font-family: "Merriweather", "Bookerly", Georgia, serif;
+            font-size: 16px; margin-bottom: 48px;
           }
 
           .collectionTitle{
@@ -92,12 +93,11 @@ const rawEmailTemplate string = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Tr
           }
 
           .headerBar{
-            font-family: "Arlo", serif;
+            font-family: "Space Mono", monospace;
             margin-top: 48px;
             width: 100%; table-layout: fixed; vertical-align: top;
 
             font-size: 24px;
-            font-family: monospace;
 
             max-width: 800px;
             margin: 0 auto;
