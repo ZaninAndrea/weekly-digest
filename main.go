@@ -14,6 +14,7 @@ import (
 
 func main() {
 	if time.Now().Weekday() != time.Saturday {
+		fmt.Printf("Today is not saturday")
 		return
 	}
 
@@ -69,7 +70,6 @@ func SendWeeklyDigest(user User, lastFetched time.Time, dialer *gomail.Dialer) e
 			}
 
 			for _, post := range feed.Items {
-				// TODO REMOVE SHIFT
 				if post.PublishedParsed != nil && lastFetched.Before(*post.PublishedParsed) {
 					foundNewPost = true
 
