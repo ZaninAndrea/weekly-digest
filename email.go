@@ -93,7 +93,7 @@ const rawEmailTemplate string = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Tr
 
           .headerBar{
             font-family: "Arlo", serif;
-            margin-top: 16px;
+            margin-top: 48px;
             width: 100%; table-layout: fixed; vertical-align: top;
 
             font-size: 24px;
