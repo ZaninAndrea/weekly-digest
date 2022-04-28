@@ -66,7 +66,7 @@ func SendWeeklyDigest(user User, lastFetched time.Time, dialer *gomail.Dialer) e
 
 			for _, post := range feed.Items {
 				// TODO REMOVE SHIFT
-				if post.PublishedParsed != nil && lastFetched.Before((*post.PublishedParsed).Add(7*24*time.Hour)) {
+				if post.PublishedParsed != nil && lastFetched.Before(*post.PublishedParsed) {
 					foundNewPost = true
 
 					if !printedTitle {
