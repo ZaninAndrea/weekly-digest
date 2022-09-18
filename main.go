@@ -14,9 +14,11 @@ import (
 
 func main() {
 	if time.Now().Weekday() != time.Saturday {
-		fmt.Printf("Today is not saturday")
+		fmt.Println("Today is not saturday")
 		return
-	}
+	}else{
+                fmt.Println("Fetching all RSS feeds")
+        }
 
 	godotenv.Load()
 
